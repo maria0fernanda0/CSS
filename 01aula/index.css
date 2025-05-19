@@ -1,0 +1,77 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    background-color: crimson;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-size: xx-large;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.644);
+    display: flex;
+    color: aliceblue;
+    padding: 2rem;
+}
+
+nav img{
+    width: 60vw;
+    height: 40vh;
+}
+
+nav p{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+nav button {
+    background-color: firebrick;
+    height: 80px;
+    border-radius: 15px;
+    font-size: medium;
+
+}
+
+nav button:hover{
+    background-color: darkred;
+}
+
+nav button a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+main{
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 2rem;
+    border: solid 8px;
+    color: white;
+    border-radius: 45px;
+    width: 40%;
+    margin: 15px 15px 15px 15px;
+}
+
+main h1{
+    letter-spacing: 8px;
+    background-color: black;
+    color: wheat;
+    border-radius: 25px;
+}
+
+main span{
+    color: greenyellow;
+}
+
+main section p {
+    line-height: 120%;
+    color: aliceblue;
+    border-radius: 15px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
