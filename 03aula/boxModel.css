@@ -3,12 +3,12 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .quadrado{
     width: 300px;
     height: 300px;
-    background-color: violet;
 }
 
 .quadrado__vermeio{
@@ -17,4 +17,18 @@
 
 .quadrado__verde{
     background-color: darkgreen;
+}
+
+.quadrado__amarelo{
+    background-color: yellow;
+    border: 20px solid black;
+    padding: 10px;
+}
+
+#cachorro {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 20px;
+    border: 10px solid yellow;
+    text-align: center;
 }
