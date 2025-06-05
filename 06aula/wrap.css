@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: black;
+    padding: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;  
+    gap: 10px;
+}
+
+/* flex-wrap determina se o contador flexível encolherá seus elementos, também é possível determinar de que maneira isso ocorre ou não */
+
+/*gap é um espaço que só existe entre os itens de um mesmo bloco */
+
+/* Utilizamos content para quando ocorre wrap ou temos mais de uma linha ou coluna*/
+
+/* Já o items, utilizamos quando não ocorre ou temos apenas uma linha.*/
+
+/* Flex-grow determina o espaço ocupado por determinado item. o tamanho padrao do flex-grow é 0, nas se você declara um flex-grow de 2, esse elemento oxupará o dobro de espaço flexível.*/
+
+
+.quadrado {
+    background-color: darkblue;
+    display: flex;
+    height: 10vh;
+    width: 120px;
+    text-align: center;
+    color: aquamarine;
+    border: 9px solid black;
+    border-radius: 8px;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    flex-basis: 300px;
+}
+
+#quadrado4{
+    flex-grow: 3;
+    flex-shrink: 2;
+}
+
+#quadrado6{
+    flex: 1 2 300px;
+}
+
+/*Flex abrevia os outros 3 elementos em um só
+    peimeiro valor é responsavel pelo grow
+    segundo valor é responsavel pelo shrik
+    terceiro valor é responsável pelo basis*/ 
+
+/*flex-shrink determina o quão facilmente um elementp encolhe. Quanto maior o número, mais rapido e agressivo o encolhimento desse elemento.*/ 
+
+/* flex-basis determina o tamanho mínimo inicial dos elementos flexíveis*/
