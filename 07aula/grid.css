@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    background-color: bisque;
+    grid-template-columns: 100px 100px 100px;
+    /*repeat recebe dois parametros, sendo o primeiro a quantidade e o segundo o tamanho ou medida*/
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas:
+      "preto1 preto1 cinza1"
+      "preto2 preto2 preto2"
+      "roxo1 preto3 roxo2"
+      "preto4 preto4 preto4"
+      "cinza2 cinza2 preto5";
+}
+
+#roxo1{
+    background-color: purple;
+    grid-area: roxo1;
+}
+#roxo2{
+    background-color: purple;
+    grid-area: roxo2;
+}
+
+#preto1 {
+    background-color: black;
+    grid-area: preto1;
+}
+#preto2 {
+    background-color: black;
+    grid-area: preto2;
+}
+#preto3 {
+    background-color: black;
+    grid-area: preto3;
+}
+#preto4 {
+    background-color: black;
+    grid-area: preto4;
+}
+#preto5 {
+    background-color: black;
+    grid-area: preto5;
+}
+
+#cinza1 {
+    background-color: rgb(29, 29, 29);
+    grid-area: cinza1;
+}
+#cinza2 {
+    background-color: rgb(29, 29, 29);
+    grid-area: cinza2;
+}
+
+
